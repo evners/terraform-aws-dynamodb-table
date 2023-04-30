@@ -18,4 +18,3 @@ variable "hash_key" {
   description = " Attribute to use as the hash (partition) key. Must also be defined as an attribute."
   type        = string
 }
-
