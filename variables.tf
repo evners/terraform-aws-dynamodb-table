@@ -18,3 +18,9 @@ variable "enable_at_rest_encryption" {
   type        = bool
   default     = true
 }
+
+variable "enable_point_in_time_recovery" {
+  description = "Enable Point-in-Time Recovery (PITR) for the DynamoDB table"
+  type        = bool
+  default     = true
+}

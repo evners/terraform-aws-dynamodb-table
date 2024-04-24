@@ -19,7 +19,11 @@ resource "aws_dynamodb_table" "this" {
   server_side_encryption {
     enabled = var.enable_at_rest_encryption
   }
-  
+
+  point_in_time_recovery {
+    enabled = var.enable_point_in_time_recovery
+  }
+
   tags = {
     "Name" = var.table_name
   }
