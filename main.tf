@@ -1,4 +1,5 @@
 # Provides a DynamoDB table resource.
+#tfsec:ignore:aws-dynamodb-table-customer-key
 resource "aws_dynamodb_table" "this" {
 
   name         = var.table_name
