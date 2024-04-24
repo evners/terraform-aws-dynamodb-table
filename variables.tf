@@ -12,3 +12,9 @@ variable "hash_key" {
   description = "The name of the attribute to be used as the hash (partition) key. It must also be defined as an attribute."
   type        = string
 }
+
+variable "enable_at_rest_encryption" {
+  description = "Enable at-rest encryption for the DynamoDB table"
+  type        = bool
+  default     = true
+}

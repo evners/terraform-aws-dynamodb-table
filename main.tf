@@ -16,6 +16,10 @@ resource "aws_dynamodb_table" "this" {
 
   }
 
+  server_side_encryption {
+    enabled = var.enable_at_rest_encryption
+  }
+  
   tags = {
     "Name" = var.table_name
   }
